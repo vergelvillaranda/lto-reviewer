@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "lto-reviewer",
+    "name": "LTO Reviewer",
     "slug": "lto-reviewer",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#F8FAFC",
     "icon": "./assets/images/icon.png",
     "scheme": "ltoreviewer",
     "userInterfaceStyle": "automatic",
@@ -11,12 +12,21 @@
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "package": "com.vergelvillaranda.ltoreviewer",
+      "versionCode": 1,
+      "backgroundColor": "#F8FAFC",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
+      "blockedPermissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
       "predictiveBackGestureEnabled": false
     },
     "web": {
@@ -37,6 +47,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "93a18393-b474-4438-80db-51051d799709"
+      }
+    },
+    "owner": "vergelvillaranda"
   }
 }
